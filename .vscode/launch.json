@@ -1,0 +1,81 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "PCA 2D",
+            "type": "python",
+            "request": "launch",
+            "program": "./pca.py",
+            "console": "integratedTerminal",
+            "args": [
+                "-dim",
+                "2D"
+            ]
+        },
+        {
+            "name": "PCA 3D",
+            "type": "python",
+            "request": "launch",
+            "program": "./pca.py",
+            "console": "integratedTerminal",
+            "args": [
+                "-dim",
+                "3D"
+            ]
+        },
+        {
+            "name": "T-SNE 2D",
+            "type": "python",
+            "request": "launch",
+            "program": "./tsne.py",
+            "console": "integratedTerminal",
+            "args": [
+                "-dim",
+                "2D"
+            ]
+        },
+        {
+            "name": "T-SNE 3D",
+            "type": "python",
+            "request": "launch",
+            "program": "./tsne.py",
+            "console": "integratedTerminal",
+            "args": [
+                "-dim",
+                "3D"
+            ]
+        },
+        {
+            "name": "Umap 2D",
+            "type": "python",
+            "request": "launch",
+            "program": "./umap.py",
+            "console": "integratedTerminal",
+            "args": [
+                "-dim",
+                "2D"
+            ]
+        },
+        {
+            "name": "Umap 3D",
+            "type": "python",
+            "request": "launch",
+            "program": "./umap.py",
+            "console": "integratedTerminal",
+            "args": [
+                "-dim",
+                "3D"
+            ]
+        }
+    ]
+}
