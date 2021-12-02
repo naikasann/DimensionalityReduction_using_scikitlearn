@@ -1,7 +1,0 @@
-datapath         : C:\Users\yamazaki\Desktop\DimensionalityReduction\treadmill_allmember.csv
-attribute_number : 10
-
-gif_frame        : 20
-gif_interval     : 20
-output_directory : ./result/
-isshow           : True

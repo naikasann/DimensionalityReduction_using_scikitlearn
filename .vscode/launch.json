@@ -1,81 +1,105 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Python: Current File",
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Python: Current File",
+			"type": "python",
+			"request": "launch",
+			"program": "${file}",
+			"console": "integratedTerminal",
+			"args": [
+
+			]
+		},
+		{
+            "name": "pca 2D",
             "type": "python",
             "request": "launch",
-            "program": "${file}",
-            "console": "integratedTerminal"
-        },
-        {
-            "name": "PCA 2D",
-            "type": "python",
-            "request": "launch",
-            "program": "./pca.py",
+            "program": "main.py",
             "console": "integratedTerminal",
             "args": [
-                "-dim",
-                "2D"
+				"--input"     , "test_data.csv",
+				"--output"    , "aaa.png",
+                "--method"    , "pca",
+				"--dim"       , "2",
+				"--input_num" , "10",
+				"--category" ,  "config/category.yaml"
             ]
         },
-        {
-            "name": "PCA 3D",
+		{
+            "name": "tsne 2D",
             "type": "python",
             "request": "launch",
-            "program": "./pca.py",
+            "program": "main.py",
             "console": "integratedTerminal",
             "args": [
-                "-dim",
-                "3D"
+				"--input"     , "test_data.csv",
+				"--output"    , "aaa.png",
+                "--method"    , "tsne",
+				"--dim"       , "2",
+				"--input_num" , "10",
+				"--category" ,  "config/category.yaml"
             ]
         },
-        {
-            "name": "T-SNE 2D",
+		{
+            "name": "umap 2D",
             "type": "python",
             "request": "launch",
-            "program": "./tsne.py",
+            "program": "main.py",
             "console": "integratedTerminal",
             "args": [
-                "-dim",
-                "2D"
+				"--input"     , "test_data.csv",
+				"--output"    , "aaa.png",
+                "--method"    , "umap",
+				"--dim"       , "2",
+				"--input_num" , "10",
+				"--category" ,  "config/category.yaml"
             ]
         },
-        {
-            "name": "T-SNE 3D",
+		{
+            "name": "pca 3D",
             "type": "python",
             "request": "launch",
-            "program": "./tsne.py",
+            "program": "main.py",
             "console": "integratedTerminal",
             "args": [
-                "-dim",
-                "3D"
+				"--input"     , "test_data.csv",
+				"--output"    , "aaa.png",
+                "--method"    , "pca",
+				"--dim"       , "3",
+				"--input_num" , "10",
+				"--category" ,  "config/category.yaml"
             ]
         },
-        {
-            "name": "Umap 2D",
+		{
+            "name": "tsne 3D",
             "type": "python",
             "request": "launch",
-            "program": "./umap.py",
+            "program": "main.py",
             "console": "integratedTerminal",
             "args": [
-                "-dim",
-                "2D"
+				"--input"     , "test_data.csv",
+				"--output"    , "aaa.png",
+                "--method"    , "tsne",
+				"--dim"       , "3",
+				"--input_num" , "10",
+				"--category" ,  "config/category.yaml"
             ]
         },
-        {
-            "name": "Umap 3D",
+		{
+            "name": "umap 3D",
             "type": "python",
             "request": "launch",
-            "program": "./umap.py",
+            "program": "main.py",
             "console": "integratedTerminal",
             "args": [
-                "-dim",
-                "3D"
+				"--input"     , "test_data.csv",
+				"--output"    , "aaa.png",
+                "--method"    , "umap",
+				"--dim"       , "3",
+				"--input_num" , "10",
+				"--category" ,  "config/category.yaml"
             ]
-        }
-    ]
+        },
+	]
 }

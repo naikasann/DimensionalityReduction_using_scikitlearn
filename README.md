@@ -1,2 +1,0 @@
-# DimensionalityReduction_using_scikitlearn
- 次元削減プログラムのテンプレ
